@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/Signuptxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/nunito"
+        android:text="SIGN UP"
+        android:textAlignment="center"
+        android:textColor="#4E4E4E"
+        android:textSize="30sp"
+        android:textStyle="normal|bold" />
+
+    <ImageView
+        android:id="@+id/BackBtnIm"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/ic_backbtn" />
+    <RelativeLayout
+        android:id="@+id/Details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Signuptxt"
+        android:layout_marginTop="40dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/F_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="271dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"
+            android:hint="First Name"
+            android:textColorHint="#A7A7A7">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/F_name_txt"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:fontFamily="@font/nunito"
+                android:inputType="text"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:textColor="#5B5B5B"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/L_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="271dp"
+            android:layout_height="63dp"
+            android:layout_below="@+id/F_name"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="70dp"
+            android:hint="Last Name"
+            android:textColorHint="#A7A7A7">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/L_name_txt"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:fontFamily="@font/nunito"
+                android:inputType="text"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:textColor="#5B5B5B"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="271dp"
+            android:layout_height="63dp"
+            android:layout_below="@+id/L_name"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="70dp"
+            android:hint="Email"
+            android:textColorHint="#A7A7A7">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Email_txt"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:fontFamily="@font/nunito"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColor="#5B5B5B"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Phone"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="271dp"
+            android:layout_height="63dp"
+            android:layout_below="@+id/Email"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="70dp"
+            android:hint="Phone"
+            android:textColorHint="#A7A7A7">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Phone_txt"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:fontFamily="@font/nunito"
+                android:inputType="number"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:textColor="#5B5B5B"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="271dp"
+            android:layout_height="63dp"
+            android:layout_below="@+id/Phone"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="70dp"
+            android:hint="Password"
+            android:textColorHint="#A7A7A7">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Password_txt"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:fontFamily="@font/nunito"
+                android:inputType="textEmailAddress"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:textColor="#5B5B5B"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="271dp"
+            android:layout_height="63dp"
+            android:layout_below="@+id/Password"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="70dp">
+
+            <TextView
+                android:id="@+id/deviceIDscan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignRight="@+id/CameraImage"
+                android:fontFamily="@font/nunito"
+                android:gravity="center"
+                android:text="DEVICE ID"
+                android:textAlignment="center"
+                android:textSize="15sp" />
+            <ImageView
+                android:id="@+id/CameraImage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_camera" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonsignup"
+        android:layout_width="271dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/Details"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="SIGNUP"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+</RelativeLayout>

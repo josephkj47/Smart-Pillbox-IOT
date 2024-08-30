@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="20dp"
+    app:cardCornerRadius="7dp"
+    app:cardBackgroundColor="#CF6666">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+            <TextView
+                android:id="@+id/pill_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito"
+                android:text="Pill Time"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_marginTop="7dp"
+                android:id="@+id/pill_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pill_time"
+                android:fontFamily="@font/nunito"
+                android:text="Pill Name"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/delete_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_clear" />
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

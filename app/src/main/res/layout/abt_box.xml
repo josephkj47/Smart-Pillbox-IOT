@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="10dp"
+    android:elevation="20dp"
+    app:cardElevation="30dp"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/text12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nunito"
+            android:text="Box ID"
+            android:textStyle="bold"
+            android:textSize="27sp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:layout_below="@id/text12">
+            <TextView
+                android:id="@+id/pname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/nunito"
+                android:text="Pill Name: Pill_Name"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/pcount"
+                android:layout_below="@+id/pname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/nunito"
+                android:text="Pill Count: Pill_Count"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/pweight"
+                android:layout_below="@+id/pcount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/nunito"
+                android:text="Pill Weight: Pill_Weight"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

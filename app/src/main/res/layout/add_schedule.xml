@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="10dp"
+    android:elevation="20dp"
+    app:cardElevation="30dp"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nunito"
+            android:text="Enter the pill and timeslot."
+            android:textSize="20sp" />
+
+        <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+            android:id="@+id/PillSelector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text12"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            app:smsp_floatingLabelColor="#1976D2"
+            app:smsp_floatingLabelText="Day"
+            app:smsp_hint="Select a Pill"
+            app:smsp_hintColor="#388E3C"
+            app:smsp_itemColor="#512DA8"
+            app:smsp_itemListColor="#7C4DFF"
+            app:smsp_itemListHintBackgroundColor="#808080"
+            app:smsp_itemListHintColor="#FFFFFF"
+            app:smsp_multilineError="false"
+            app:smsp_selectedItemListColor="#FF5252"
+            app:smsp_typeface="@font/nunito" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PillSelector"
+            android:layout_marginTop="10dp"
+            android:id="@+id/datess"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/SetTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito"
+                android:hint="Select Time"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/SetTime"
+                android:src="@drawable/ic_date" />
+        </RelativeLayout>
+
+        <com.github.nikartm.button.FitButton
+            android:id="@+id/applybtn"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/datess"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:enabled="true"
+            android:gravity="center"
+            app:fb_backgroundColor="@color/black"
+            app:fb_cornerRadius="50dp"
+            app:fb_fontFamilyRes="@font/nunito"
+            app:fb_rippleColor="#FBE9E7"
+            app:fb_text="Apply"
+            app:fb_textColor="#FFF" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

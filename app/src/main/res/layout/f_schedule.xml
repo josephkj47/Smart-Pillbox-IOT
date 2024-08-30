@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="50dp"
+    android:layout_marginStart="50dp"
+    android:layout_marginEnd="50dp">
+
+    <TextView
+        android:id="@+id/welcome_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito"
+        android:text="Schedule"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="#4E4E4E"
+        android:textSize="30sp" />
+
+    <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+        android:id="@+id/WeekSelector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome_txt"
+        android:layout_marginTop="20dp"
+        app:smsp_floatingLabelColor="#1976D2"
+        app:smsp_floatingLabelText="Day"
+        app:smsp_hint="Select Day"
+        app:smsp_hintColor="#388E3C"
+        app:smsp_itemColor="#512DA8"
+        app:smsp_itemListColor="#7C4DFF"
+        app:smsp_itemListHintBackgroundColor="#808080"
+        app:smsp_itemListHintColor="#FFFFFF"
+        app:smsp_multilineError="false"
+        app:smsp_selectedItemListColor="#FF5252"
+        app:smsp_typeface="@font/nunito" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/AllSchedules"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/actionslist"
+        android:layout_below="@id/WeekSelector"
+        android:layout_marginTop="20dp" />
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/actionslist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <com.github.nikartm.button.FitButton
+                android:id="@+id/addbtn"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/margins"
+                android:enabled="true"
+                android:gravity="center"
+                app:fb_backgroundColor="@color/black"
+                app:fb_cornerRadius="50dp"
+                app:fb_fontFamilyRes="@font/nunito"
+                app:fb_rippleColor="#FBE9E7"
+                app:fb_text="Add"
+                app:fb_textColor="#FFF" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/margins"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"/>
+            <com.github.nikartm.button.FitButton
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/margins"
+                android:id="@+id/applybtn"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:enabled="true"
+                android:gravity="center"
+                app:fb_backgroundColor="@color/black"
+                app:fb_cornerRadius="50dp"
+                app:fb_fontFamilyRes="@font/nunito"
+                app:fb_rippleColor="#FBE9E7"
+                app:fb_text="Apply"
+                app:fb_textColor="#FFF" />
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>

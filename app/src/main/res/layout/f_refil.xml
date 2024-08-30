@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="50dp"
+    android:layout_marginStart="50dp"
+    android:layout_marginEnd="50dp"
+    android:layout_marginBottom="20dp">
+
+    <TextView
+        android:id="@+id/welcome_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito"
+        android:text="Refil Pillbox"
+        android:textAlignment="center"
+        android:textColor="#4E4E4E"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"/>
+    <RelativeLayout
+        android:id="@+id/boxes"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/welcome_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/margin"
+            android:layout_centerHorizontal="true"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/box1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toLeftOf="@id/margin"
+            app:cardBackgroundColor="@color/c100"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Box 1"
+                android:textColor="@color/white" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/box2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/margin"
+            app:cardBackgroundColor="@color/c50"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Box 2"
+                android:textColor="@color/white" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/box3"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/box1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toLeftOf="@id/margin"
+            app:cardBackgroundColor="@color/c25"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Box 3"
+                android:textColor="@color/white" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/box4"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/box2"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/margin"
+            app:cardBackgroundColor="@color/c5"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Box 4"
+                android:textColor="@color/white" />
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:id="@+id/divider"
+        android:background="#A1A1A1"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/boxes"/>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomloading"
+        android:layout_below="@+id/divider">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/RefilBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="#E1E1E1"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunitob"
+                android:text="Refil pills" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/ChangePillbtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/RefilBtn"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="#E1E1E1"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunitob"
+                android:text="Change Pill" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/Refreshbtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/ChangePillbtn"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="#E1E1E1"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunitob"
+                android:text="Refresh Boxes" />
+        </com.google.android.material.card.MaterialCardView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/bottomloading"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/Connecting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connecting..."
+            android:textSize="17sp"
+            android:fontFamily="@font/nunitob"
+            android:layout_alignParentBottom="true"/>
+
+        <ProgressBar
+            android:indeterminateTint="#6E6E6E"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginStart="2dp"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_toRightOf="@+id/Connecting"
+            android:indeterminate="true" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

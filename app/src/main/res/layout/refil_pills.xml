@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="10dp"
+    android:elevation="20dp"
+    app:cardElevation="30dp"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nunito"
+            android:text="Select the pill and count."
+            android:textSize="20sp" />
+        <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+            android:id="@+id/pillSelect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text12"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"
+            app:smsp_floatingLabelColor="#1976D2"
+            app:smsp_floatingLabelText="Day"
+            app:smsp_hint="Select Pill"
+            app:smsp_hintColor="#388E3C"
+            app:smsp_itemColor="#512DA8"
+            app:smsp_itemListColor="#7C4DFF"
+            app:smsp_itemListHintBackgroundColor="#808080"
+            app:smsp_itemListHintColor="#FFFFFF"
+            app:smsp_multilineError="false"
+            app:smsp_selectedItemListColor="#FF5252"
+            app:smsp_typeface="@font/nunito" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Pillcount"
+            android:layout_below="@+id/pillSelect"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="70dp"
+            android:hint="Pill Count"
+            android:textColorHint="#A7A7A7"
+            app:boxStrokeColor="#EAEAEE"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Pillcountt"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:textColor="#5B5B5B"
+                android:fontFamily="@font/nunito"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:inputType="number"
+                android:maxLines="1"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.github.nikartm.button.FitButton
+            android:id="@+id/applybtn"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/Pillcount"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:enabled="true"
+            android:gravity="center"
+            app:fb_backgroundColor="@color/black"
+            app:fb_cornerRadius="50dp"
+            app:fb_fontFamilyRes="@font/nunito"
+            app:fb_rippleColor="#FBE9E7"
+            app:fb_text="Apply"
+            app:fb_textColor="#FFF" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
